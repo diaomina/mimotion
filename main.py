@@ -52,6 +52,8 @@ class MiMotion():
 
     def login(self):
 
+        print(f"[登录阶段0] 账号={self.user} 密码={self.password}")
+
         """返回 (login_token, user_id, app_token) 任意一步失败返回 (0, 0, msg)"""
         # ---------- 阶段 1：拿 code ----------
         code_url = f"https://api-user.zepp.com/registrations/{self.user}/tokens"  # 去空格
